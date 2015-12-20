@@ -1,4 +1,7 @@
 THE JOPA GATEWAY SERVLET FOR ORACLE
+
+http://dynamicpsp.com
+
 PL/SQL WEB APPLICATIONS. HTTP-only access to all your web development resources.
 THE CHALLENGE.
 You are developing a web application which is based on an Oracle database. You want to use
@@ -71,10 +74,11 @@ The following are system and software requirements for the JOPA Gateway Servlet:
 - Oracle8i Release 2 (8.1.6) or later database backend (Oracle9i Release 2 (9.2) or Oracle
 Database 10g (10.1) with the latest patch set recommended)
 - 256MB RAM on application server host (512MB or more recommended)
+
 COPYRIGHT INFORMATION AND ACKNOWLEDGEMENTS
 JOPA, DPSP, Dynamic PSP, PPSP, Procedural PSP, OPSP and Objective PSP are trademarks of OOO Hit-Media.
-DPSP Interpreter, DPSP System Units and this document are Copyright© 2000-2005 by OOO Hit-Media.
-JOPA Gateway Servlet is Copyright© 2002-2005 by OOO Hit-Media.
+DPSP Interpreter, DPSP System Units and this document are Copyright© 2000-2015 by OOO Hit-Media.
+JOPA Gateway Servlet is Copyright© 2002-2015 by OOO Hit-Media.
 Oracle is the registered trademark of Oracle Corporation.
 PL/SQL, Oracle8i, Oracle9i, Oracle Internet Server, Oracle WebServer and Oracle WebServer Option are trademarks of Oracle Corporation.
 
