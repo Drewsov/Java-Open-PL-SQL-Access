@@ -2,9 +2,9 @@
 // ADMIN.java
 //
 // $Id: ADMIN.java,v 1.7 2005/02/11 18:39:54 Bob Exp $
-//
+// 
 //----------------------------------------------------------------------
-
+  
 package com.nnetworks.jopa.ADMIN;
 
 import com.nnetworks.jopa.ADMIN.*;
@@ -18,11 +18,11 @@ import java.sql.*;
 import java.io.*;
 import java.text.*;
 import java.util.*;
-import java.net.URL;
+import java.net.URL;  
 
 //----------------------------------------------------------------------
 
-public class ADMIN extends Processor_PSP
+public class ADMIN extends Processor_PSP 
 implements JOSPServer
 {
 
