@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"> 
+  <display-name>Java-based Oracle HTMLDB and Dynamic PSP Gateway Servlet v.2007</display-name>
+  <description>Dynamic PSP Gateway Java Servlet v.2007/XE/10g/9i/Tomcat</description>
+  <servlet>
+    <description>Java-based Oracle PL/SQL Access Gateway Servlet</description>
+    <servlet-name>jopa</servlet-name>
+    <display-name>jpls</display-name>
+    <servlet-class>com.nnetworks.jopa.JOPA</servlet-class>
+    <init-param>
+      <param-name>
+        cfgfile
+      </param-name>
+      <param-value>/jopa/cfg/jopa.cfg</param-value>
+      <description>
+        Path for config file.
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        logfile
+      </param-name>
+      <param-value>/jopa/cfg/jopa.log</param-value>
+      <description>
+        Path for log file
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        loglevel
+      </param-name>
+      <param-value>4</param-value>
+      <description>
+        loglevel level, usually use =3 for checking errors.
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        debuglevel
+      </param-name>
+      <param-value>4</param-value>
+      <description>
+        debug level, usually use =3 for checking errors.
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        file types
+      </param-name>
+      <param-value>.gif;.jpg;.jpeg;.png;.js;.css;.html;.htm;</param-value>
+      <description>
+        File types for downloads, using for PSP mode.
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        script types
+      </param-name>
+      <param-value>.psp;.dpsp;</param-value>
+      <description>
+        File types for scripting, executable code, using for PSP mode.
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        script prefix
+      </param-name>
+      <param-value>go</param-value>
+      <description>
+        Script prefix for execute code like - !go
+      </description>
+     </init-param>
+    <init-param>
+      <param-name>
+        mime mapping file
+      </param-name>
+      <param-value>
+        /jopa/cfg/mime.types
+      </param-value>
+      <description>
+        Mime mapping file
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        404.html
+      </param-name>
+      <param-value>
+        /jopa/cfg/404.html
+      </param-value>
+      <description>
+        404.html
+      </description>
+    </init-param>
+    <init-param>
+      <param-name>
+        502.html
+      </param-name>
+      <param-value>
+        /jopa/cfg/502.html
+      </param-value>
+      <description>
+        502.html
+      </description>
+    </init-param>
+  </servlet>
+   <servlet-mapping>
+        <servlet-name>jopa</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>jopa</servlet-name>
+        <url-pattern>/dpsp/*</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>jopa</servlet-name>
+        <url-pattern>/htmldb/*</url-pattern>
+    </servlet-mapping>
+  <session-config>
+    <session-timeout>20</session-timeout>
+  </session-config>
+</web-app>

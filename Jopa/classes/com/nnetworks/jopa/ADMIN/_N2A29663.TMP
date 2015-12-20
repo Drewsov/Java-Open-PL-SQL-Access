@@ -1,0 +1,791 @@
+[admin]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration</TITLE>
+<%@(styles)%>
+</HEAD>
+<BODY>
+<H3 style="font-size:26pt;font-family:Haettenschweiler,Impact,Arial,Helvetica">JOPA Gateway Servlet Administration</H3>
+<span style="font-size:20pt;font-family:Haettenschweiler,Impact,Arial,Helvetica"><%doVersion()%></span>
+<BR/>
+<BR/>
+<A href="dadentries">Database Access Descriptors</A>
+<BR/>
+<A href="config">Servlet Configuration</A>
+<BR/>
+<!-- <BR/>
+<A href="pool">Connection Pool</A>
+<BR/>-->
+<HR/>
+<BUTTON onclick="window.location.href='admin.submit?do=save';"> Save to file </BUTTON>
+&nbsp;
+<BUTTON onclick="window.location.href='admin.submit?do=reload';"> Reload from file </BUTTON>
+&nbsp;
+<BUTTON onclick="window.close();"> Exit </BUTTON>
+</BODY>
+</HTML>
+
+
+[admin.submit]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration</TITLE>
+<%@(styles)%>
+</HEAD>
+<BODY>
+<BR/>
+<BR/>
+<FONT color="red"><B>
+<%doAdminSubmit(do)
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+setTimeout("window.location.href='admin';", 500);
+//-->
+</SCRIPT>
+%>
+</B></FONT><BR/>
+<BR/>
+<HR/>
+<BUTTON onclick="window.location.href='admin';"> Root Page </BUTTON>
+</BODY>
+</HTML>
+
+[dadentries.submit]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration</TITLE>
+<%@(styles)%>
+</HEAD>
+<BODY>
+<BR/>
+<BR/>
+<FONT color="red"><B>
+<%doAdminSubmit(do)
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+setTimeout("window.location.href='dadentries';", 500);
+//-->
+</SCRIPT>
+%>
+</B></FONT><BR/>
+<BR/>
+<HR/>
+<BUTTON onclick="window.location.href='admin';"> Root Page </BUTTON>
+</BODY>
+</HTML>
+
+[dadentries]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Database Access Descriptors</TITLE>
+<%@(styles)%>
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+function fConfirmDelete(dad) {
+  return window.confirm("Are you sure you want to delete DAD " + dad + " ?");
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<H3> Database Access Descriptors </H3>
+<TABLE border="1" cellspacing="0" cellpadding="1" width="100%">
+<TR>
+ <TH>DAD Name</TH>
+ <TH>JOPA Mode</TH>
+ <TH>Connection Info</TH>
+ <TH>&nbsp;</TH>
+ <TH>&nbsp;</TH>
+</TR>
+<%doDADEntries(Default)
+<TR>
+ <TD>&nbsp;<A href="dadentry?dad={P}"><B>{P}</B></A> </TD>
+ <TD>&nbsp;{M} </TD>
+ <TD>&nbsp;{X} {Y} {Z} </TD>
+ <TD width="3%"><A href="dadentry?dad={P}">Edit</A></TD>
+ <TD width="5%"><A href="daddelete?dad={P}"
+         onclick="return fConfirmDelete('{P}');" >Delete</A></TD>
+</TR>
+%>
+<TR>
+ <TD>&nbsp;<A href="dadentry"><B>new</B></A></TD>
+ <TD>&nbsp;</TD>
+ <TD>&nbsp;</TD>
+ <TD width="3%"><A href="dadentry">Create</A></TD>
+ <TD width="5%">&nbsp;</TD>
+</TR>
+</TABLE>
+<BR/>
+<A href="config">Servlet Configuration</A><BR/>
+<HR/>
+<BUTTON onclick="window.location.href='admin';"> Root Page </BUTTON>&nbsp;
+<BUTTON onclick="window.location.href='dadentries.submit?do=save';"> Save Config to File </BUTTON>
+</BODY>
+</HTML>
+
+
+[daddelete]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Delete DAD</TITLE>
+<%@(styles)%>
+</HEAD>
+<BODY>
+<BR/>
+<BR/>
+<FONT color="red"><B>
+<%doDADDelete()
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+setTimeout("window.location.href='dadentries';", 500);
+//-->
+</SCRIPT>
+%>
+</B></FONT><BR/>
+<BR/>
+<HR/>
+<BUTTON onclick="window.location.href='dadentries';"> Done </BUTTON>
+</BODY>
+</HTML>
+
+
+[dadentry]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - DAD Editor</TITLE>
+<%@(styles1)%>
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+function ffix(th) {
+  th.style.color = "black";
+  if (th.getAttribute("name") == "mode") {
+    fshow(th.options(th.selectedIndex).getAttribute("value"));
+  }
+}
+function fshow(v) {
+  if (v.length > 0) {
+    v = v.substring(0,1).toUpperCase();
+    var tt = document.getElementById("TTT");
+    for (i = 0; i < tt.rows.length; i++) {
+      var s = tt.rows(i).getAttribute("cls")
+      if (s) {
+        tt.rows(i).style.display = (s.indexOf(v) >= 0 ? "" : "none");
+      }
+    }
+  }
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<H3> Database Access Descriptor </H3>
+<FORM action="dadentry.submit" method="POST">
+<TABLE ID="TTT" border="0" cellspacing="0" cellpadding="2" width="100%">
+
+<TR>
+ <TD align="right"><B>DAD name</B></TD>
+ <TD>&nbsp;</TD>
+ <TD align="left">
+  <INPUT type="text" name="dad" value="<%=(dad)%>"
+         style="background:#ffffff; font-weight:bold;" />
+ </TD>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR>
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+ <div class="dadParamDescr">Database Access Descriptor name.<br>
+ DAD name that will be used for accessing the applications:<br/>
+ <tt>http://server/&lt;servlet&gt;/jopa/<B>DAD</B>/&lt;callspec&gt;</tt></div>
+ <BR/>
+ </TD>
+</TR>
+
+<TR>
+ <TD align="right">Access Mode</TD>
+  <%doDADListProp(mode) Native, OWA, WebDAV, UDAV, PERSES, PSP, Admin %>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR>
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Mode in which the servlet accesses PL/SQL applications through this DAD.<br>
+   <b>Native</b> - Native Dynamic PSP<br>
+   <b>OWA</b> - OWA-compatible (for legacy or mixed OWA and Dynamic PSP applications)<br>
+   <b>WebDAV</b> - WebDAV access to the Dynamic PSP Repository - development only, no applications can be executed through this DAD<br>
+   <b>UDAV</b> - WebDAV access to the OS file system - development only, no applications can be executed through this DAD<br>
+   <b>Admin</b> - Servlet Administration Interface - administration only, no applications can be executed through this DAD
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR>
+ <TD align="right">User name</TD>
+  <%doDADTextProp(username)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR>
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Name of the user to connect as.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR>
+ <TD align="right">Password</TD>
+  <%doDADTextProp(password)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Oracle user's password.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+<TR cls="AU">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   User's password.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="U">
+ <TD align="right">User database file</TD>
+  <%doDADTextProp(user_db)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="U">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+    User database file. This optional user database is an XML file that you can use to control
+    users and their passwords. See sample user database file provided with the JOPA servlet,
+    it is self-explanatory. Once this parameter is set, specified user database will be used
+    to authenticate users <b>in addition</b> to the username/password set for this DAD.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOP">
+ <TD align="right">Default Page</TD>
+  <%doDADTextProp(default_page)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="NOP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Page to redirect to if the DAD is accessed without the call specification (that is, as <tt>http://.../DAD/</tt>).
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOWP">
+ <TD align="right">Oracle Server Address</TD>
+  <%doDADTextProp(host)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Address (name or IP) of the Oracle listener this DAD connects to.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOWP">
+ <TD align="right">Oracle Server Port</TD>
+  <%doDADTextProp(port)%>
+ <TD align="left">(1521)</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   TCP port of the Oracle listener.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOWP">
+ <TD align="right">Oracle Server SID</TD>
+  <%doDADTextProp(sid)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Oracle service ID (SID)
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOWP">
+ <TD align="right">Package State Reset Mode</TD>
+  <%doDADListProp(reset_mode) full, fast %>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   PL/SQL package state reset mode:<br>
+   <b>full</b> - Full reset (supported on all Oracle versions)<br>
+   <b>fast</b> - Lightweight reset (supported on Oracle v8.1.7.2 or later only)
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOWP">
+ <TD align="right">PL/SQL Array Type</TD>
+  <%doDADTextProp(array_type)%>
+ <TD align="left">(<tt>&#91;schema&#93;.name</tt>)</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Table type the servlet should use when passing array parameters. Note that this MUST be
+   an SQL type, not a PL/SQL index-by table - Oracle Thin JDBC driver does not support PL/SQL
+   tables, hence this restriction. We recommend using <code>NN$VARCHAR_ARRAY</code> as array type. 
+   However, the schema that will be accessed through this DAD should have this type declared or
+   explicitly granted EXECUTE on it if the type is owned by different user.<br/>
+   <b>Important note:</b> this parameter is CaSe-SeNsItIvE!
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOWP">
+ <TD align="right">Document Table</TD>
+  <%doDADTextProp(document_table)%>
+ <TD align="left">(<tt>&#91;schema&#93;.name</tt>)</TD>
+</TR>
+<TR cls="NOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   The table into which the servlet will insert uploaded files. The table should
+   conform to the document table specification (see docs for details.)
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOP">
+ <TD align="right">Document Access Path</TD>
+  <%doDADTextProp(document_path)%>
+ <TD align="left">(data)</TD>
+</TR>
+<TR cls="NOP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+  The document access path prefix. Including this prefix in the request URL like this:<br>
+  <tt>http://.../DAD/<b>doc_access_path/</b>&lt;document&gt;</tt><br>
+  will cause the servlet to call <b>Document Access Procedure</b>, which is responsible for retrieving the requested
+  document. If the procedure is undefined or not found, the servlet will attempt to resolve the requested document
+  in the <b>Document Table</b> and return if found.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="NOP">
+ <TD align="right">Document Access Procedure</TD>
+  <%doDADTextProp(document_proc)%>
+ <TD align="left">(<tt>&#91;&#91;schema.&#93;package.&#93;name</tt>)</TD>
+</TR>
+<TR cls="NOP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   The full name of the procedure, which will process requests through the <b>Document Access Path</b>.
+   This procedure should have no non-default parameters and should conform to the document access procedure
+   specifications (see docs for details.)
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="N">
+ <TD align="right">Progressive Output</TD>
+  <%doDADListProp(progressive_output) 0=disabled, 1=enabled %>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="N">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Disables or enables progressive output for this DAD. With progressive output enabled, output from 
+   DPSP units will be sent to the client as soon as it is generated instead of buffering the whole 
+   page before sending it to the client.<br>
+   Applies only to <b>Native</b> mode DADs, ignored for other modes.<br>
+   Possible values:<br>
+   <b>disabled</b> - progressive output is disabled<br/>
+   <b>enabled</b> - progressive output is enabled<br/>
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="O">
+ <TD align="right">Flexible Call Parameters Count</TD>
+  <%doDADListProp(flex) 2=two parameters, 4=four parameters %>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="O">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   For OWA applications with Flexible Parameter Passing support. Defines how much parameters are accepted:<br/>
+   <b>2</b> - array of parameter names and array of values (default)<br/>
+   <b>4</b> - array element count, array of parameter names, array of values and reserved parameter (<i>deprecated</i>)
+  </div>
+  <BR/>
+ </TD>
+</TR>
+<TR cls="O">
+ <TD align="right">Excluded Packages and Procedures</TD>
+  <%doDADTextProp(exclusion_list)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="O">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+    Since some packages are not supposed to be available from the web to unauthenticated users, especially
+    packages owned by SYS, JOPA Servlet automatically prohibits access to certain packages and procedures.
+    Such packages may allow access to sensitive information or may allow altering the system in undesired ways.
+    This parameter allows you to override the default list of excluded packages or disable exclusions.<br/>
+    Default list of excluded packages and procedures is<br/>
+    <code><b>SYS\..*,DBMS_.*,UTL_.*,OWA_UTIL.SHOWSOURCE,OWA_UTIL.CELLSPRINT</b></code><br/>
+    You can add your own packages and procedures to the above list by specifying them in this field. Separate
+    list elements by commas, all standard regular expressions are supported (note that dot character means any
+    character in regular expressions, you should escape it with backslash character if you mean literal dot.)
+    Your list will be appended to the default exclusion list.<br/>
+    You can also disable exclusion list checking completely by entering <code>#NONE#</code> in this field.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="UNOWP">
+ <TD align="right">Compress output when requested</TD>
+  <%doDADListProp(compression_enabled) 0=disabled, 1=enabled%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="UNOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+    HTTP 1.1 protocol allows clients to request that the content is compressed using GZIP or Deflate
+    methods to save bandwidth. This parameter controls whether the JOPA Servlet should honor such
+    requests and compress the output when sending it. Note that compression is not available for
+    <b>Native</b> DADs with <b>progressive output with chunked transfer</b> enabled.<br/>
+    Default for this parameter is <b>disabled</b>.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="UNOWP">
+ <TD align="right">Charset</TD>
+  <%doDADTextProp(charset)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="UNOWP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   The character set for this DAD (IANA charset name, such as: <b>utf-8</b>, <b>windows-1251</b>, <b>cp866</b>, etc.). The 
+   servlet will assume that all forms/arguments are posted in this charset and will always output all 
+   pages in this charset (automatically converting to it if needed.)
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="UP">
+ <TD align="right">Local Base Path</TD>
+  <%doDADTextProp(localbase)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="UP">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Enter the server file system path to be used as root for WebDAV access.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR cls="U">
+ <TD align="right">Lock-table full path</TD>
+  <%doDADTextProp(lock_table)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR cls="U">
+ <TD width="30%">&nbsp;</TD><TD>&nbsp;</TD><TD colspan="2">
+  <div class="dadParamDescr">
+   Full path and name of the file to be used as a lock-table for this DAD.
+   Lock-table is used for storing locks (semaphores) for shared access to the file system.
+  </div>
+  <BR/>
+ </TD>
+</TR>
+
+<TR><TD colspan="4"><HR/></TD></TR>
+
+<TR>
+ <TD colspan="4" align="center">
+  &nbsp;
+  <INPUT type="submit" name="save" value=" Apply " />
+  &nbsp;
+  <BUTTON onclick="window.location.href=window.location.href;"> Reset </BUTTON>
+  &nbsp;
+  <BUTTON onclick="window.location.href='dadentries';"> Back to the DAD List </BUTTON>
+ </TD>
+</TR>
+
+</TABLE>
+</FORM>
+<SCRIPT language="JavaScript"><!--
+fshow("<%doDADProp(mode)%>");
+//-->
+</SCRIPT>
+</BODY>
+</HTML>
+
+
+[textprop]
+ <TD>&nbsp;</TD>
+ <TD align="left">
+  <INPUT type="text" size="40" maxlength="256"
+         name="{N}" value="{V}"
+         style="background:#f5f5f5; color:{C};" onchange="ffix(this);" />
+ </TD>
+
+
+[paswprop]
+ <TD>&nbsp;</TD>
+ <TD align="left">
+  <INPUT type="password" size="40" maxlength="256"
+         name="{N}" value="{V}"
+         style="background:#f5f5f5; color:{C};" onchange="ffix(this);" />
+ </TD>
+
+
+[listprop]
+ <TD>&nbsp;</TD>
+ <TD align="left">
+  <SELECT name="{N}" size="1"
+          style="background:#f5f5f5; color:{C};" onchange="ffix(this);" >
+   {V}
+  </SELECT>
+ </TD>
+
+
+[dadentry.submit]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - DAD Editor</TITLE>
+<%@(styles)%>
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+window.location.href="dadentry?dad=<%=(dad)%>";
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<%doDADPropSubmit(mode)%>
+<%doDADPropSubmit(username)%>
+<%doDADPropSubmit(password)%>
+<%doDADPropSubmit(default_page)%>
+<%doDADPropSubmit(host)%>
+<%doDADPropSubmit(port)%>
+<%doDADPropSubmit(sid)%>
+<%doDADPropSubmit(reset_mode)%>
+<%doDADPropSubmit(array_type)%>
+<%doDADPropSubmit(document_table)%>
+<%doDADPropSubmit(document_path)%>
+<%doDADPropSubmit(document_proc)%>
+<%doDADPropSubmit(progressive_output)%>
+<%doDADPropSubmit(flex)%>
+<%doDADPropSubmit(exclusion_list)%>
+<%doDADPropSubmit(compression_enabled)%>
+<%doDADPropSubmit(charset)%>
+<%doDADPropSubmit(localbase)%>
+<%doDADPropSubmit(lock_table)%>
+<%doDADPropSubmit(user_db)%>
+</BODY>
+</HTML>
+
+
+[config]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Configuration</TITLE>
+<%@(styles)%>
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+function ffix(th) { th.style.color = "black"; }
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<H3> Servlet Parameters </H3>
+<FORM action="config.submit" method="POST">
+<TABLE border="0" cellspacing="0" cellpadding="2" width="100%">
+<TR>
+ <TD align="right">Log-file full path</TD>
+  <%doCfgTextProp(logfile)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR>
+ <TD align="right">Logging level</TD>
+  <%doCfgListProp(loglevel) 0,1,2,3,4,5 %>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR>
+ <TD align="right">Debug level</TD>
+  <%doCfgListProp(debuglevel) 0,1,2,3,4,5 %>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR>
+ <TD align="right">Error message prefix</TD>
+  <%doCfgTextProp(err_prefix)%>
+ <TD align="left">(<tt>**</tt>)</TD>
+</TR>
+<TR>
+ <TD align="right">Normal message prefix</TD>
+  <%doCfgTextProp(log_prefix)%>
+ <TD align="left">&nbsp;</TD>
+</TR>
+<TR><TD colspan="4"><HR/></TD></TR>
+<TR>
+ <TD colspan="4">
+  &nbsp;
+  <INPUT type="submit" name="save" value=" Apply " />
+  &nbsp;
+  <BUTTON onclick="window.location.href=window.location.href;"> Reset </BUTTON>
+  &nbsp;
+  <BUTTON onclick="window.location.href='admin';"> Root Page </BUTTON>
+ </TD>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
+
+
+[config.submit]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Configuration</TITLE>
+<%@(styles)%>
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+window.location.href="config";
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<%doCfgPropSubmit(logfile)%>
+<%doCfgPropSubmit(loglevel)%>
+<%doCfgPropSubmit(debuglevel)%>
+<%doCfgPropSubmit(err_prefix)%>
+<%doCfgPropSubmit(log_prefix)%>
+<%doCfgApply()%>
+</BODY>
+</HTML>
+
+
+[pool]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Connection Pool</TITLE>
+<%@(styles)%>
+</HEAD>
+<BODY>
+<H3> Connection Pool </H3>
+<FORM action="pool.submit" method="POST">
+<TABLE border="0" cellspacing="0" cellpadding="3">
+<TR>
+  <TD align="right"> Currently Instantiated: </TD>
+  <TD>
+    &nbsp;
+    <INPUT type="text" name="total" value="<%doPoolTotal()%>"
+           size="6" maxlength="6" readonly />
+  </TD>
+  <TD>
+    &nbsp;
+    <INPUT type="submit" name="clearpool" value=" Flush " />
+  </TD>
+</TR>
+<TR>
+  <TD align="right"> Maximum Allowed: </TD>
+  <TD>
+    &nbsp;
+    <INPUT type="text" name="limit" value="<%doPoolLimit()%>"
+           size="6" maxlength="6" />
+  </TD>
+  <TD>
+    &nbsp;
+    <INPUT type="submit" name="setlimit" value=" Set Limit " />
+  </TD>
+</TR>
+</TABLE>
+</FORM>
+<HR/>
+<BUTTON onclick="window.location.href='admin';"> Root Page </BUTTON>
+</BODY>
+</HTML>
+
+
+[pool.submit]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Connection Pool</TITLE>
+<%@(styles)%>
+<SCRIPT type="text/javascript" language="JavaScript"><!--
+window.location.href="pool";
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<%doPoolSubmit()%>
+</BODY>
+</HTML>
+
+
+[styles]
+<STYLE type="text/css">
+body{background-color:#EEEEEE;color:black;font-family:verdana,arial,helvetica;font-size:11pt;}
+th{font-size:11px;font-weight:bold;}
+td{font-size:11px;font-weight:normal;}
+a{font-size:11px;font-weight:normal;text-decoration:none;}
+a:hover{font-size:11px;font-weight:normal;text-decoration:underline;}
+input{font-size:11px;font-weight:normal;}
+button{font-size:11px;font-weight:normal;} 
+select{font:menu;font-size:11px;font-weight:normal;}
+</STYLE>
+
+
+[styles1]
+<STYLE type="text/css">
+body{background-color:#EEEEEE; color:black;font-family:verdana,arial,helvetica;font-size:11px;}
+th{font-size:11px;font-weight:bold;}
+td{font-size:11px;font-weight:normal;}
+input{font-size:11px;font-weight:normal;}
+button{font-size:11px;font-weight:normal;} 
+select{font:menu;font-size:11px;font-weight:normal;}
+a{font-size:11px;font-weight:normal;text-decoration:none;}
+a:hover{font-size:11px;font-weight:normal;text-decoration:underline;}
+tt{font-size:11px;font-weight:bold;}
+code{font-size:12px;font-weight:bold;}
+.dadParamDescr{font:menu;font-size:11px;color:#333333;text-align:left;}
+</STYLE>
+
+
+[test]
+<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 4.01 Transitional//EN\">
+<HTML>
+<HEAD><TITLE>JOPA Gateway Servlet Administration - Test</TITLE>
+<%@(styles)%>
+</HEAD>
+<BODY>
+test
+</BODY>
+</HTML>

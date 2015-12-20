@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'windows-1251'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-Kami">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="kami2" password="->DataBase_User_-8dvTm68kPE2gjlddnNLxM9lOBbPRnlw" url="jdbc:oracle:thin:@85.158.54.140:1521:KAMI"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Kami" jndi-name="jdbc/KamiDS" connection-pool-name="jdev-connection-pool-Kami"/>
+    <native-data-source name="jdev-connection-native-Kami" jndi-name="jdbc/KamiCoreDS" url="jdbc:oracle:thin:@85.158.54.140:1521:KAMI" user="kami2" password="->DataBase_User_3mFljQ1MHFSGZgqbdxqu4ovQc0ocr-2x" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-Hitmedia">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="site2" password="->DataBase_User_lB-viS5rjNmt-Q4C3Kz4-Rf0c2j57dwo" url="jdbc:oracle:thin:@85.158.48.50:1521:DSP"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Hitmedia" jndi-name="jdbc/HitmediaDS" connection-pool-name="jdev-connection-pool-Hitmedia"/>
+    <native-data-source name="jdev-connection-native-Hitmedia" jndi-name="jdbc/HitmediaCoreDS" url="jdbc:oracle:thin:@85.158.48.50:1521:DSP" user="site2" password="->DataBase_User_l0DJ3VyZ41kGDbe50mMkGnBx7qlLPwhv" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

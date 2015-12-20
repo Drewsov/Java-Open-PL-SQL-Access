@@ -1,0 +1,484 @@
+11/02/10 18:36:01.312 10.1.3.3.0 Started
+11/02/10 18:36:07.956 jpls: 10.1.3.3.0 Started
+11/02/10 18:37:58.49 jpls: 10.1.3.3.0 Stopped
+11/02/10 18:37:58.457 10.1.3.3.0 Started
+11/02/10 18:38:35.529 10.1.3.3.0 Started
+11/02/10 18:38:45.760 jpls: 10.1.3.3.0 Started
+11/02/10 18:39:39.232 10.1.3.3.0 Started
+11/02/10 18:39:46.586 jpls: 10.1.3.3.0 Started
+11/02/11 11:52:11.833 10.1.3.3.0 Started
+11/02/11 11:55:43.488 jpls: 10.1.3.3.0 Started
+11/02/11 12:03:34.225 jpls: 10.1.3.3.0 Stopped
+11/02/11 12:03:34.647 10.1.3.3.0 Started
+11/02/11 12:03:44.688 10.1.3.3.0 Started
+11/02/11 12:04:06.271 jpls: 10.1.3.3.0 Started
+11/02/11 12:31:09.28 10.1.3.3.0 Started
+11/02/11 12:31:19.210 jpls: 10.1.3.3.0 Started
+11/02/11 12:31:19.320 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 19:37:17.152 10.1.3.3.0 Started
+11/02/12 19:37:30.253 jpls: 10.1.3.3.0 Started
+11/02/12 19:37:30.507 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:16:21.395 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:16:37.930 jpls: 10.1.3.3.0 Stopped
+11/02/12 20:16:38.429 10.1.3.3.0 Started
+11/02/12 20:16:43.295 jpls: 10.1.3.3.0 Started
+11/02/12 20:16:43.391 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:32:54.169 10.1.3.3.0 Started
+11/02/12 20:33:01.82 jpls: 10.1.3.3.0 Started
+11/02/12 20:33:01.206 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:33:01.249 jpls: Программа на вашем хост-компьютере разорвала установленное подключение
+11/02/12 20:34:16.137 jpls: 10.1.3.3.0 Stopped
+11/02/12 20:34:16.418 10.1.3.3.0 Started
+11/02/12 20:34:28.869 jpls: 10.1.3.3.0 Started
+11/02/12 20:34:28.937 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:34:28.962 jpls: Программа на вашем хост-компьютере разорвала установленное подключение
+11/02/12 20:44:09.360 10.1.3.3.0 Started
+11/02/12 20:44:15.987 jpls: 10.1.3.3.0 Started
+11/02/12 20:44:16.134 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:45:23.974 10.1.3.3.0 Started
+11/02/12 20:45:43.704 jpls: 10.1.3.3.0 Started
+11/02/12 20:45:43.834 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:123) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:46:55.998 jpls: 10.1.3.3.0 Stopped
+11/02/12 20:46:56.279 10.1.3.3.0 Started
+11/02/12 20:47:01.976 jpls: 10.1.3.3.0 Started
+11/02/12 20:47:02.39 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:124) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:47:34.901 10.1.3.3.0 Started
+11/02/12 20:48:18.474 jpls: 10.1.3.3.0 Started
+11/02/12 20:48:18.629 jpls: Servlet error
+oracle.classloader.util.AnnotatedNoClassDefFoundError: 
+
+	  Отсутствующий класс: org.apache.commons.codec.binary.Base64
+
+	Зависимый класс: org.apache.xmlrpc.DefaultTypeFactory
+	         Загрузчик: current-workspace-app.web.jpls:0.0.0
+	    Исходный код: /H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar
+	  Конфигурация: <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html
+
+Отсутствующий класс не доступен ни в одном исходном коде или загрузчике в системе.
+	at oracle.classloader.PolicyClassLoader.handleClassNotFound (PolicyClassLoader.java:2068) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.internalLoadClass (PolicyClassLoader.java:1679) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1635) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at oracle.classloader.PolicyClassLoader.loadClass (PolicyClassLoader.java:1620) [/H:/Work%202011/Work/SRC/jdevj2ee10133/j2ee/home/lib/pcl.jar, by sun.misc.Launcher$AppClassLoader@26099296]
+	at java.lang.ClassLoader.loadClassInternal (ClassLoader.java:319) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+	at org.apache.xmlrpc.DefaultTypeFactory.<clinit> (DefaultTypeFactory.java:54) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.createTypeFactory (XmlRpc.java:235) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpc.<init> (XmlRpc.java:190) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcRequestProcessor.<init> (XmlRpcRequestProcessor.java:40) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcWorker.<init> (XmlRpcWorker.java:43) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.createWorker (XmlRpcServer.java:180) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.getWorker (XmlRpcServer.java:170) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:136) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at org.apache.xmlrpc.XmlRpcServer.execute (XmlRpcServer.java:125) [/H:/Work 2011/Work/SRC/jdevj2ee10133/lib/xmlrpc.jar (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.doXMLPost (POST.java:124) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JXMLRPC.POST.service (POST.java:47) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at com.nnetworks.jopa.JOPA.service (JOPA.java:286) [/H:/Work 2011/Work/SRC/jdevj2ee10133/jdev/mywork/Jopa.2.0.1/Jopa/classes/ (from <classpath> in H:\Work 2011\Work\SRC\jdevj2ee10133\jdev\mywork\Jopa.2.0.1\Jopa\public_html), by current-workspace-app.web.jpls:0.0.0]
+	at javax.servlet.http.HttpServlet.service (HttpServlet.java:856) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/servlet.jar (from <code-source> (ignore manifest Class-Path) in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by api:1.4.0]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.invoke (ServletRequestDispatcher.java:713) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.ServletRequestDispatcher.forwardInternal (ServletRequestDispatcher.java:370) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.doProcessRequest (HttpRequestHandler.java:871) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.processRequest (HttpRequestHandler.java:453) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.serveOneRequest (HttpRequestHandler.java:221) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:122) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].server.http.HttpRequestHandler.run (HttpRequestHandler.java:111) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketReadHandler$SafeRunnable.run (ServerSocketReadHandler.java:260) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.procClientSocket (ServerSocketAcceptHandler.java:239) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler.access$700 (ServerSocketAcceptHandler.java:34) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at oracle.oc4j.network.ServerSocketAcceptHandler$AcceptHandlerHorse.run (ServerSocketAcceptHandler.java:880) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at com.evermind[Oracle Containers for J2EE 10g (10.1.3.3.0) ].util.ReleasableResourcePooledExecutor$MyWorker.run (ReleasableResourcePooledExecutor.java:298) [/H:/Work 2011/Work/SRC/jdevj2ee10133/j2ee/home/lib/oc4j-internal.jar (from <code-source> in META-INF/boot.xml in H:\Work 2011\Work\SRC\jdevj2ee10133\j2ee\home\oc4j.jar), by oc4j:10.1.3]
+	at java.lang.Thread.run (Thread.java:595) [jre bootstrap, by jre.bootstrap:1.5.0_06]
+
+11/02/12 20:52:12.667 10.1.3.3.0 Started
+11/02/12 20:52:24.764 jpls: 10.1.3.3.0 Started
+11/02/12 20:54:40.741 10.1.3.3.0 Started
+11/02/12 20:54:45.543 jpls: 10.1.3.3.0 Started
+11/02/12 20:55:30.582 10.1.3.3.0 Started
+11/02/12 20:55:39.915 jpls: 10.1.3.3.0 Started
+11/02/12 20:55:57.687 jpls: 10.1.3.3.0 Stopped
+11/02/12 20:55:58.14 10.1.3.3.0 Started
+11/02/12 20:56:01.663 jpls: 10.1.3.3.0 Started
+11/02/12 21:00:43.571 10.1.3.3.0 Started
+11/02/12 21:00:53.340 jpls: 10.1.3.3.0 Started
+11/02/12 21:01:50.451 10.1.3.3.0 Started
+11/02/12 21:01:58.284 jpls: 10.1.3.3.0 Started
+11/02/12 21:02:34.985 10.1.3.3.0 Started
+11/02/12 21:02:42.498 jpls: 10.1.3.3.0 Started
+11/02/12 21:04:57.233 10.1.3.3.0 Started
+11/02/12 21:05:02.270 jpls: 10.1.3.3.0 Started

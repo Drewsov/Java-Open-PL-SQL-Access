@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Extension-Name: JOPA
+Specification-Title: Servlet
+Specification-Version: 2.0
+Specification-Vendor: "Sun Microsystems (http://java.sun.com)"
+Name: com/nnetworks/jopa
+Implementation-Title: "JOPA Gateway Servlet"
+Implementation-Version: 1.6.1
+Implementation-Vendor: "N-Networks (http://www.dynamicpsp.com)"
+Main-Class: com.nnetworks.jopa.JOPA
+Class-Path: WEB-INF/classes WEB-INF/lib/jopalib.jar

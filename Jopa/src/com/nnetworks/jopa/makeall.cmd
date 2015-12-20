@@ -1,0 +1,11 @@
+make -N
+cd ADMIN
+make -N
+cd ..\NATIVE
+make -N
+cd ..\OWA
+make -N
+cd ..\WEBDAV
+make -N
+cd ..\UDAV
+make -N

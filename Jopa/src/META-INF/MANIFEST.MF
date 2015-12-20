@@ -1,0 +1,13 @@
+Manifest-Version: 1.8.2
+Specification-Title: Servlet
+Class-Path: WEB-INF/classes WEB-INF/lib/jopa.jar
+Created-By: Oracle JDeveloper 10g 10.1.3
+Main-Class: com.nnetworks.jopa.JOPA
+Implementation-Title: "JOPA Gateway Servlet"
+Specification-Vendor: "Sun Microsystems (http://java.sun.com)"
+Specification-Version: 2.0
+Extension-Name: JOPA
+Implementation-Version: 1.8.2
+Name: com/nnetworks/jopa
+Implementation-Vendor: "Andrew A.Toropov (http://www.dynamicpsp.com)"
+

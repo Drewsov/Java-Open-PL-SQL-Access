@@ -547,6 +547,7 @@
          </list>
          <list n="url-path">
             <url path="src/"/>
+            <url path="../../Java-Open-PL-SQL-Access-3.12/"/>
          </list>
       </hash>
    </hash>
