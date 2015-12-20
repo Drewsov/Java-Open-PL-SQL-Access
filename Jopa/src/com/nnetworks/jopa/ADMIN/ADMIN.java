@@ -4,8 +4,8 @@
 // $Id: ADMIN.java,v 1.7 2005/02/11 18:39:54 Bob Exp $
 // 
 //----------------------------------------------------------------------
-  
-package com.nnetworks.jopa.ADMIN;
+   
+package com.nnetworks.jopa.ADMIN; 
 
 import com.nnetworks.jopa.ADMIN.*;
 import com.nnetworks.jopa.*;
