@@ -1,7 +1,7 @@
 # Java-Open-PL-SQL-Access
 THE CHALLENGE.
 You are developing a web application which is based on an OracleÆ database. You want to use
-PSP (PL/SQLô Server Pages) technology along with other server-side scripting technologies,
+PSP (PL/SQL Server Pages) technology along with other server-side scripting technologies,
 like JSP, to build the application and leverage the power of PL/SQL where appropriate. However,
 your developers are working remotely and you donít want to open direct access to the
 database for them or anyone else outside your local network. Dynamic PSPô seems to be natural
