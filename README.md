@@ -86,4 +86,4 @@ Sun, Sun Microsystems, the Sun Logo and Java are trademarks or registered tradem
 and other countries.
 Other company or product names are mentioned for identification purposes only and may be service marks, trademarks, or registered
 trademarks of their respective owners.
-For more information, please mail us at info@dynamicpsp.com or visit our web site at http://www.dynamicpsp.com.
+For more information, please mail us at andrew.toropov@gmail.com or visit our web site at http://www.dynamicpsp.com.
